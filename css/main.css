@@ -1,0 +1,491 @@
+/* -------------- fonts and variable--------------- */
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url(../fonts/Montserrat-Regular.woff2) format('woff2'),
+        url(../fonts/Montserrat-Regular.woff) format('woff'),
+        url(../fonts/Montserrat-Regular.ttf) format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url(../fonts/Montserrat-Bold.woff2) format('woff2'),
+        url(../fonts/Montserrat-Bold.woff) format('woff'),
+        url(../fonts/Montserrat-Regular.ttf) format('truetype');
+    
+}
+
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url(../fonts/Poppins-Bold.woff2) format('woff2'),
+        url(../fonts/Poppins-Bold.woff) format('woff'),
+        url(../fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-regular';
+    src: url(../fonts/Poppins-Regular.woff2) format('woff2'),
+        url(../fonts/Poppins-Regular.woff) format('woff'),
+        url(../fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+
+
+:root{
+    --main-color:#f7f7f7;
+    --main-color-rgb:rgb(247, 247, 247);
+    --secondary-color:#343434;
+    --secondary-color-rgb:rgb(52, 52, 52);   
+    --paragraph-color:#7D8182;
+    --paragraph-color-rgb:rgb(125, 129, 130);
+
+}
+.body{
+    font-family: 'Poppins-regular';
+}
+.icon{
+    
+    padding-bottom: 20px;
+    background-color: var(--main-color);
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: var(--main-color);
+    border-radius: 50%;
+   
+
+}
+.icon:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* ================= end ============= */
+/* ------------- navbar---------- */
+.navbar{
+    background-color: none;
+    transition: all 0.5s;
+}
+
+.navbar-brand{
+    font-family: 'Montserrat-bold';
+    font-size: 18px;
+    font-weight: 800;
+}
+.navbar-brand ul{
+    font-family: 'Poppins-regular';
+    font-size: 14px; 
+}
+.navbar-scrolled{
+    background-color: var(--secondary-color);
+
+}
+/* ----------- end navbar-------- */
+/* ----------- section hello-------- */
+.hello{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6))   ,     url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hello  h1{
+    font-family: 'Montserrat-bold';
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--main-color);
+    margin-left: 30px;
+
+
+    
+}
+.hello h2{
+    font-family: 'Montserrat-regular';
+    font-size: 60px;
+    font-weight: 200;
+    color:var(--main-color);
+}
+.hello h2::after{
+    content: "";
+    animation: word infinite 6s alternate;
+    font-family: 'Montserrat-bold';
+    
+}
+@keyframes word{
+    0% {
+        content: "|";
+    }
+    3% {
+        content: "D|";
+    }
+    5% {
+        content: "De|";
+    }
+    6% {
+        content: "Dev|";
+    }
+    7% {
+        content: "Deve|";
+    }
+    9% {
+        content: "Devel|";
+    }
+    11% {
+        content: "Develo|";
+    }
+    12% {
+        content: "Develop|";
+    }
+    14% {
+        content: "Develope|";
+    }
+    16% {
+        content: "Developer|";
+    }
+    17% {
+        content: "Develope|";
+    }
+    18% {
+        content: "Develop|";
+    }
+    20% {
+        content: "Develo|";
+    }
+    22% {
+        content: "Devel|";
+    }
+    23% {
+        content: "Deve|";
+    }
+    25% {
+        content: "Dev|";
+    }
+    26% {
+        content: "De|";
+    }
+    27% {
+        content: "D|";
+    }
+    29% {
+        content: "|";
+    }
+    30% {
+        content: "D|";
+    }
+    31% {
+        content: "De|";
+    }
+    33% {
+        content: "Des|";
+    }
+    34% {
+        content: "Desi|";
+    }
+    35% {
+        content: "Desig|";
+    }
+    37% {
+        content: "Design|";
+    }
+    39% {
+        content: "Designe|";
+    }
+    40% {
+        content: "Designer|";
+    }
+    41% {
+        content: "Designe|";
+    }
+    42% {
+        content: "Design|";
+    }
+    44% {
+        content: "Desig|";
+    }
+    46% {
+        content: "Desi|";
+    }
+    48% {
+        content: "Des|";
+    }
+    49% {
+        content: "De|";
+    }
+    51% {
+        content: "D";
+    }
+    53% {
+        content: "|";
+    }
+    
+    54% {
+        content: "L|";
+    }
+    56% {
+        content: "La|";
+    }
+    57% {
+        content: "Lar|";
+    }
+    59% {
+        content: "Larr|";
+    }
+    60% {
+        content: "Larry|";
+    }
+    62% {
+        content: "Larry |";
+    }
+    64% {
+        content: "Larry D|";
+    }
+    66% {
+        content: "Larry Da|";
+    }
+    67% {
+        content: "Larry Dan|";
+    }
+    69% {
+        content: "Larry Dani|";
+    }
+    70% {
+        content: "Larry Danie|";
+    }
+    72% {
+        content: "Larry Daniel|";
+    }
+    74% {
+        content: "Larry Daniels|";
+    }
+    76% {
+        content: "Larry Daniel|";
+    }
+    78% {
+        content: "Larry Danie|";
+    }
+    80% {
+        content: "Larry Dani|";
+    }
+    82% {
+        content: "Larry Dan|";
+    }
+    84% {
+        content: "Larry Da|";
+    }
+    86% {
+        content: "Larry D|";
+    }
+    88% {
+        content: "Larry |";
+    }
+    90% {
+        content: "Larry|";
+    }
+    92% {
+        content: "Larr|";
+    }
+    94% {
+        content: "Lar|";
+    }
+    96% {
+        content: "La|";
+    }
+    98% {
+        content: "L|";
+    }
+    100% {
+        content: "|";
+    }
+   
+}
+
+/* ----------- end section hello-------- */
+.aboutme h2{
+    font-family: 'Montserrat-bold';
+    color: var(--secondary-color);
+    font-size:30px;
+    font-weight: 900;
+}
+.aboutme p{
+    color: var(--paragraph-color);
+    font-family: 'Poppins-regular';
+    font-size: 15px;
+    line-height: 24px;
+}
+.aboutme span{
+    color: var(--secondary-color);
+    font-family: 'Poppins-bold';
+
+}
+.aboutme .btn-dark:hover{
+    outline-color: black;
+    background-color: white;
+    color: var(--secondary-color);
+}
+.right{
+    margin-left: 48px;
+    padding-top: 10px;
+  border-left: 2px dotted var(--paragraph-color);
+  border-bottom: 2px dotted var(--paragraph-color);
+  
+
+}
+.right img{
+    width: 85%;
+}
+.left h6{
+    color: var(--paragraph-color);
+    font-family: 'Poppins-regular';
+    letter-spacing: 2px;
+}
+/* ============ services ============= */
+.services{
+background-color: #eeededdd;
+}
+
+
+.services h3{
+    font-family: 'Montserrat-bold';
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+
+}
+
+
+
+.services .item1{
+    margin-left: 20px;
+    margin-bottom: 20px;
+   
+    padding: 30px 15px;
+}
+/*==========  Portfolio ================ */
+.imageport{
+    margin-bottom: 20px;
+    position: relative;
+}
+.imageport:hover .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid --main-color;
+    background-color:white;
+}
+.imageport img{
+    width: 100%;
+}
+.imageport .overlay{
+    background-image: linear-gradient(rgba(255, 254, 254, 0.957),rgba(255, 254, 254, 0.957));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    
+}
+.imageport:hover .overlay{
+    opacity: 100%;
+
+}
+.imageport .overlay p{
+    
+    transform: translate(150px , 100px);
+    
+}
+
+.imageport .overlay .icon{
+    transform: translate(130px , 100px)
+}
+/* ------------ testpmonial ----------- */
+.testomonial{
+    background-color: var(--main-color);
+}
+.carousel{
+    transform: translateY(100px);
+}
+
+
+.testomonial h2{
+    font-family: 'Montserrat-bold';
+    font-size: 50px;
+    font-weight: 800;
+    padding-top: 38px;
+}
+.carousel-item{
+    padding-bottom: 30px;
+}
+.carousel-item   img{
+    width: 10%;
+    transform: translateX(500px);
+}
+/* ======== our team =================== */
+.ourteam .icon{
+    
+    padding-bottom: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    border-radius: 50%;
+    
+   
+
+}
+
+.ourteam .icon:hover{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+.teams{
+    position: relative;
+}
+.teams .overlay{
+    background-image: linear-gradient(rgba(255, 254, 254, 0.957),rgba(255, 254, 254, 0.957));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    
+}
+.overlay .icon{
+    transform: translateY(150px)
+    translateX(50px)
+}
+
+.teams:hover .overlay{
+    opacity: 100%;
+
+
+}
+
+/* ------------ contacts --------------- */
+
+.contact .btn-contact{
+    transform: translateX(175px);
+    padding:5px 30px
+}
+.contact .email{
+    margin-left: 10px;
+}
+.contact .btn-dark:hover{
+    outline-color: black;
+    background-color: white;
+    color: var(--secondary-color);
+    
+}
+.ContactUs .icon{
+    transform:translateX(90px)
+}
+    
+
+
